@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n =  parseInt(prompt("Enter the value of n"));
+        let sumOfEven = (n)=>{
+
+            let sum = 0;
+
+            
+            if (n%2 === 0){
+                for(let i =0;i<=n;i+=2){
+                    sum = sum + i
+                }
+            
+            }
+            else {
+
+                for(let i =0;i<n;i+=2){
+                    sum = sum + i
+                }
+              
+
+            }
+            
+            alert("The sum of even numbers up to " + n + " is: " + sum); 
+            console.log("The sum of even numbers up to " + n + " is: " + sum); 
+
+        }
+// For checking if the entered number is valid, if not Nan then sum
+
+        if (!isNaN(n)) {
+            sumOfEven(n)
+        } else{
+            alert("Enter a Vaild Number")
+        }
+        
+    </script>
+</body>
+</html>
